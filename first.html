@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>导航页面</title>
+<style>
+  body {
+      margin: 0;
+  }
+
+  ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#333;
+  }
+  
+  li{
+    float:left;
+  }
+  
+  li a, .dropbtn
+  {
+    display:inline-block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+  }
+  
+  li a:hover, .dropdown:hover, .dropbtn
+  {
+    background-color:#111;
+  }
+  
+  .dropdown
+  {
+    display:inline-block;
+  }
+  
+  .dropdown-content
+  {
+    display:none;
+    position:absolute;
+    background-color:#f9f9f9;
+    min-width:160px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a
+  {
+    color:black;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content
+  {
+    display:block;
+  }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">主页</a></li>
+  <li><a href="#news">新闻</a></li>
+  <li><a href="#contact">联系</a></li>
+  <div class="dropdown">
+    <a href="#" class="dropbtn">下拉菜单</a>
+    <div class="dropdown-content">
+      <a href="#">链接 1</a>
+      <a href="#">链接 2</a>
+      <a href="#">链接 3</a>
+    </div>
+  </div>
+  <li style="float:right"><a class="active" href="#about">关于</a></li>
+</ul>
+
+<div style="margin-left:0%;margin-top:30px;padding:1px 16px;height:600px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <form action="MAILTO:530670864@qq.com">
+  <fieldset>
+  <legend>个人信息:</legend>
+  账号: <input type="text" name="账号"><br>
+  密码: <input type="password" name="密码"><br>
+  性别：<br><input type="radio" name="sex" value="male">Male<br>
+  <input type="radio" name="sex" value="female">Female<br>
+  学历：<select name="学历">
+  <option value="本科" selected>本科</option>
+  <option value="硕士">硕士</option>
+  <option value="博士">博士</option>
+  </select><br>
+  兴趣：<br><input type="checkbox" name="interest" value="篮球">篮球<br>
+  <input type="checkbox" name="interest" value="足球">足球<br>
+  <input type="checkbox" name="interest" value="排球">排球<br>
+  自我介绍：<textarea rows="10" cols="30">
+  自我介绍
+  </textarea><br>
+  <input type="submit" value="发送">
+  <input type="reset" value="重置">
+  </fieldset>
+  </form>
+</div>
+
+
+<p>点击按钮检测年龄。</p>
+年龄:<input id="age" value="" />
+<p>是否达到投票年龄?</p>
+<button onclick="myFunction()">点击按钮</button>
+<p id="demo"></p>
+<script>
+function myFunction()
+{
+	var age,voteable;
+	age=document.getElementById("age").value;
+	voteable=(age<18)?"年龄太小":"年龄已达到";
+	document.getElementById("demo").innerHTML=voteable;
+}
+</script>    
+        
+<div class="tooltip">鼠标移动到这
+  <span class="tooltiptext">提示文本</span>
+</div>
+
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+
+
+
+</body>
+</html>

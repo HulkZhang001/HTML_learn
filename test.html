@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+<meta name="description" content="Hulk_Z的第一个网页">
+<meta name="author" content="Hulk_Z">
+<meta http-equiv="refresh" content="3000">
+<style>
+/*这是个注释*/
+#t1
+{
+color:red;
+text-align:center;
+font-family:arial;
+}
+p
+{
+background-color:yellow;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="c1.css">
+<base target="_blank"/>
+<title>Hulk_Z</title> 
+  <!--[if lt IE 9]>
+  <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<script>
+document.write("我爱HTML!<hr/>")
+document.write("<h1>这是一个标题</h1><hr/>");
+document.write("<p>这是一个段落。</p>");
+</script> 
+
+
+
+<p id="demo">
+猜猜我是谁？</p>
+
+<script>
+function myFunction()
+{
+	document.getElementById("demo").innerHTML="我是大黄蜂！";
+}
+
+function myFunction1()
+{
+	x=document.getElementById("demo") // 找到元素
+	x.style.color="red";          // 改变样式
+}
+</script>
+
+<button type="button" onclick="myFunction()">变身！</button>
+
+<button type="button" onclick="myFunction1()">变色！</button>
+
+
+<div id="container" style="width:1000px">
+ 
+<div id="header" style="background-color:#FFA500;">
+<h1 id="t1">title</h1></div>
+
+<div id="导航" style="background-color:#FFD700;height:800px;width:100px;float:left;">
+<big>my favorite</big><br>
+<a href="https://www.baidu.com/" style="text-decoration:none;">
+百度</a><br>
+<a href="https://www.bilibili.com/" style="text-decoration:none;">
+B站</a><br>
+<a href="https://www.hupu.com/" style="text-decoration:none;">
+虎扑</a><br>
+<a href="https://www.runoob.com/" style="text-decoration:none;">
+菜鸟教程</a></div>
+
+ 
+<div id="content" style="background-color:#EEEEEE;height:800px;width:900px;float:left;">
+内容在这里
+<form action="MAILTO:530670864@qq.com">
+<fieldset>
+<legend>个人信息:</legend>
+账号: <input type="text" name="账号"><br>
+密码: <input type="password" name="密码"><br>
+性别：<br><input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female<br>
+学历：<select name="学历">
+<option value="本科" selected>本科</option>
+<option value="硕士">硕士</option>
+<option value="博士">博士</option>
+</select><br>
+兴趣：<br><input type="checkbox" name="interest" value="篮球">篮球<br>
+<input type="checkbox" name="interest" value="足球">足球<br>
+<input type="checkbox" name="interest" value="排球">排球<br>
+自我介绍：<textarea rows="10" cols="30">
+自我介绍
+</textarea><br>
+<input type="submit" value="发送">
+<input type="reset" value="重置">
+</fieldset>
+</form>
+</div>
+ 
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+530670864@qq.com</div>
+
+<iframe src="http://www.baidu.com/" name="hupu" width="1000" height="500" frameborder="0"></iframe>
+<p><a href="http://www.hupu.com" target="hupu">虎扑</a></p>
+ 
+</div>
+ 
+</body>
+</html>
